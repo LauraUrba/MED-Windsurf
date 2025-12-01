@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windsurf - IDE de IA de Próxima Geração</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="container">
+            <div class="nav-brand">WINDSURF</div>
+            <ul class="nav-links">
+                <li><a href="#visao-geral">Visão Geral</a></li>
+                <li><a href="#vantagens">Vantagens</a></li>
+                <li><a href="#desvantagens">Desvantagens</a></li>
+                <li><a href="#utilizacao">Utilização</a></li>
+                <li><a href="#abnt-assistant">ABNT Assistant</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="visao-geral" class="section">
+            <h1 class="section-title">WINDSURF</h1>
+            <p>Windsurf é um IDE de IA de próxima geração criado para manter você no fluxo. Nesta página, você encontrará instruções para instalar o Windsurf no seu computador, concluir o onboarding e iniciar seu primeiro projeto com recursos de IA.</p>
+        </section>
+
+        <section id="vantagens" class="section">
+            <h2 class="section-title">Principais vantagens</h2>
+            <ul class="feature-list">
+                <li><strong>Fluxo contínuo de trabalho com IA:</strong> O Cascade permite que o desenvolvedor permaneça "no fluxo", automatizando tarefas como correção de lint, execução de comandos no terminal e continuidade de ações anteriores.</li>
+                <li><strong>Memória contextual:</strong> O Cascade lembra aspectos importantes da base de código e do workflow, o que facilita retomadas e sugestões mais precisas.</li>
+                <li><strong>Suporte ao MCP (Model Context Protocol):</strong> Permite conectar ferramentas e serviços personalizados, ampliando as capacidades do agente de IA.</li>
+                <li><strong>Interface visual e interativa:</strong> Com recursos como arrastar e soltar imagens, integração com terminal e deploy com um clique, o Windsurf oferece uma experiência rica e intuitiva.</li>
+                <li><strong>Turbo Mode:</strong> Automatiza comandos no terminal, acelerando tarefas repetitivas.</li>
+                <li><strong>Clientes de peso:</strong> Empresas como Zillow, Mercado Livre, Cisco e Dell já utilizam a plataforma, o que reforça sua confiabilidade e escalabilidade.</li>
+            </ul>
+        </section>
+
+        <section id="desvantagens" class="section">
+            <h2 class="section-title">Desvantagens e limitações</h2>
+            <ul class="feature-list">
+                <li><strong>Curva de aprendizado:</strong> Por ser uma IDE nova e com recursos avançados, pode exigir tempo para adaptação, especialmente para quem vem de ambientes como VS Code.</li>
+                <li><strong>Menor controle manual:</strong> A automação intensa pode limitar o controle direto do desenvolvedor sobre certas ações, o que pode ser um problema em projetos que exigem precisão ou customização profunda.</li>
+                <li><strong>Dependência de conectividade:</strong> Muitos recursos dependem de acesso à internet e servidores MCP, o que pode ser um obstáculo em ambientes offline.</li>
+            </ul>
+        </section>
+
+        <section id="utilizacao" class="section">
+            <h2 class="section-title">Para quem é mais adequada</h2>
+            <ul class="feature-list">
+                <li>Desenvolvedores solo ou em equipes pequenas que desejam acelerar o desenvolvimento com IA.</li>
+                <li>Projetos com base de código extensa, onde a memória contextual e automação fazem diferença.</li>
+                <li>Designers e full-stack developers que se beneficiam da integração com imagens, terminal e deploys rápidos.</li>
+                <li>Estudantes e iniciantes podem usar a versão gratuita para aprender com sugestões inteligentes, embora devam se adaptar à interface.</li>
+            </ul>
+
+            <h3 class="subsection-title">Privacidade e segurança de código</h3>
+            <ul class="feature-list">
+                <li><strong>Memória e rastreamento de ações:</strong> O Cascade armazena informações sobre seu código e comportamento, o que pode levantar preocupações se usado em projetos sensíveis.</li>
+                <li><strong>Integração com servidores MCP:</strong> Ao conectar serviços externos, há risco de exposição de dados se não forem bem configurados.</li>
+                <li><strong>Sugestões baseadas em web search:</strong> Podem incluir dados externos que não foram auditados, exigindo atenção ao incorporar no código.</li>
+            </ul>
+            <p>Recomenda-se revisar as configurações de privacidade e os servidores MCP conectados, especialmente em ambientes corporativos ou com dados confidenciais.</p>
+
+            <h3 class="subsection-title">EXTRA</h3>
+            <ul class="feature-list">
+                <li><strong>Como abrir o Cascade:</strong> Cmd/Ctrl+L ou ícone no canto superior direito.</li>
+                <li><strong>Links rápidos:</strong> Web Search, Memories & Rules, MCP, Terminal, Workflows, App Deploys.</li>
+                <li><strong>Explicação do MCP:</strong> Protocolo que permite acesso a ferramentas personalizadas via servidores MCP.</li>
+                <li><strong>Exemplos de uso:</strong> Continue My Work, Turbo Mode, Drag & Drop Images.</li>
+                <li><strong>Clientes que usam:</strong> Zillow, Mercado Livre, Cisco, Dell, entre outros.</li>
+            </ul>
+        </section>
+
+        <section id="abnt-assistant" class="section">
+            <h2 class="section-title">Resumo Técnico do Projeto ABNT Assistant</h2>
+            
+            <h3>1. Objetivo do Projeto</h3>
+            <p>O projeto ABNT Assistant tem como finalidade auxiliar estudantes na geração automatizada de referências conforme as normas da ABNT, utilizando uma aplicação desenvolvida em Flask. A proposta inicial envolvia a correção de falhas nos endpoints responsáveis pelo upload de arquivos, detecção do tipo de trabalho acadêmico e geração de referências bibliográficas.</p>
+            <img src="Captura de tela de 2025-11-15 19-00-24.png" alt="">
+
+
+            <h3>2. Diagnóstico e Soluções Implementadas</h3>
+            
+            <h4>2.1. Detecção de Dependências</h4>
+            <p><strong>Problema:</strong> O comando main.py --check-only indicava ausência de dependências, mesmo com os pacotes instalados.</p>
+            <p><strong>Causa:</strong> A função responsável utilizava nomes do PyPI em vez dos nomes reais de importação.</p>
+            <p><strong>Solução:</strong> Foi realizado o mapeamento correto entre pacotes e módulos:</p>
+            <pre>('python-docx', 'docx')
+('scikit-learn', 'sklearn')
+('beautifulsoup4', 'bs4')
+('pyyaml', 'yaml')</pre>
+
+            <img src="Captura de tela de 2025-11-15 19-09-12.png" alt="">
+
+            <h4>2.2. Conflito de Porta</h4>
+            <p><strong>Problema:</strong> O servidor Flask não iniciava na porta padrão 5000.</p>
+            <p><strong>Causa:</strong> A porta estava ocupada por outro processo.</p>
+            <p><strong>Solução:</strong> O servidor foi configurado para utilizar a porta 5001.</p>
+
+            <h4>2.3. Erro de Favicon</h4>
+            <p><strong>Problema:</strong> Requisições para /favicon.ico resultavam em erro 404.</p>
+            <p><strong>Solução:</strong> Foi adicionada uma rota com favicon SVG simples.</p>
+
+            <h4>2.4. Falha na Importação do python-docx</h4>
+            <p><strong>Problema:</strong> A ausência da biblioteca causava falhas nas importações.</p>
+            <p><strong>Solução:</strong> Foram implementadas importações condicionais nos módulos formatador.py e detector.py.</p>
+            <img src="Captura de tela de 2025-11-15 19-46-39.png" alt="">
+
+            <h4>2.5. Erros JavaScript com Arrays Undefined</h4>
+            <p><strong>Problema:</strong> O frontend tentava acessar .length em arrays indefinidos.</p>
+            <p><strong>Solução:</strong> Foram adicionadas verificações de segurança:</p>
+            <pre>const erros = analise.erros || [];
+const sugestoes = analise.sugestoes || [];</pre>
+
+            <h4>2.6. Geração de Referências com Falhas</h4>
+            <p><strong>Problema:</strong> A função de geração de referências retornava erro genérico.</p>
+            <p><strong>Causa:</strong> Validação insuficiente, tratamento de exceções genérico e campos obrigatórios ausentes.</p>
+            <p><strong>Solução:</strong></p>
+            <ul>
+                <li>Validação aprimorada dos campos</li>
+                <li>Tratamento específico de erros</li>
+                <li>Inclusão de valores padrão</li>
+                <li>Correções na formatação conforme normas ABNT</li>
+            </ul>
+
+            <h3>3. Arquivos Modificados</h3>
+            <ul>
+                <li><strong>main.py:</strong> correção da função check_dependencies()</li>
+                <li><strong>app.py:</strong> melhorias nas rotas e tratamento de erros</li>
+                <li><strong>formatador.py</strong> e <strong>detector.py:</strong> importações condicionais</li>
+                <li><strong>referencias.py:</strong> validação robusta e tratamento de exceções</li>
+                <li><strong>normas.py:</strong> ajustes na formatação e remoção de duplicações</li>
+                <li><strong>upload.html:</strong> segurança no JavaScript e melhorias na função generateReference()</li>
+            </ul>
+            <img src="Captura de tela de 2025-11-15 19-09-53.png" alt="">
+
+            <h3>4. Fluxo de Trabalho</h3>
+            <ol>
+                <li>Diagnóstico inicial com verificação de dependências</li>
+                <li>Correção de erros de runtime nos endpoints principais</li>
+                <li>Debugging de funções JavaScript</li>
+                <li>Validação de formulários com campos obrigatórios e valores padrão</li>
+            </ol>
+
+            <h3>5. Estado Atual da Aplicação</h3>
+            <ul>
+                <li>Servidor ativo em http://127.0.0.1:5001</li>
+                <li>Todas as dependências instaladas corretamente</li>
+                <li>Funcionalidades operacionais:
+                    <ul>
+                        <li>Upload de arquivos</li>
+                        <li>Detecção de tipo de trabalho</li>
+                        <li>Orientações sobre formatação ABNT</li>
+                        <li>Geração de referências</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>6. Lições Aprendidas</h3>
+            <ul>
+                <li>Importações circulares devem ser evitadas com modularização adequada</li>
+                <li>Validação no frontend é essencial para evitar erros de execução</li>
+                <li>Mensagens específicas de erro facilitam o processo de debugging</li>
+                <li>Cada tipo de referência exige campos distintos</li>
+                <li>Valores padrão previnem falhas quando o usuário omite informações</li>
+            </ul>
+
+            <h3>7. Próximas Etapas</h3>
+            <ul>
+                <li>Realizar testes completos de todas as funcionalidades</li>
+                <li>Implementar logs detalhados para facilitar futuras manutenções</li>
+                <li>Documentar as APIs para uso e extensão do sistema</li>
+                <li>Criar testes unitários para garantir estabilidade</li>
+                <li>Melhorar a interface com feedback visual mais intuitivo</li>
+            </ul>
+
+            <p>A aplicação encontra-se funcional, com tratamento adequado de erros, validação completa dos dados e interface segura para o usuário. O projeto representa um avanço significativo na automação de normas acadêmicas, com potencial para expansão como extensão ou aplicativo educacional.</p>
+        </section>
+
+        <section id="avaliacao" class="section">
+            <h2 class="section-title">Avaliação</h2>
+            <div class="rating">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span class="rating-text">4.5/5.0</span>
+                </div>
+                <div class="rating-details">
+                    <div class="rating-category">
+                        <span>Facilidade de Uso:</span>
+                        <div class="rating-bar">
+                            <div class="rating-fill" style="width: 90%"></div>
+                        </div>
+                        <span>4.5</span>
+                    </div>
+                    <div class="rating-category">
+                        <span>Recursos:</span>
+                        <div class="rating-bar">
+                            <div class="rating-fill" style="width: 95%"></div>
+                        </div>
+                        <span>4.8</span>
+                    </div>
+                    <div class="rating-category">
+                        <span>Desempenho:</span>
+                        <div class="rating-bar">
+                            <div class="rating-fill" style="width: 88%"></div>
+                        </div>
+                        <span>4.4</span>
+                    </div>
+                    <div class="rating-category">
+                        <span>Suporte:</span>
+                        <div class="rating-bar">
+                            <div class="rating-fill" style="width: 92%"></div>
+                        </div>
+                        <span>4.6</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section id="mapa-mental" class="section">
+        <div class="container">
+            <h2 class="section-title">Mapa Mental</h2>
+            <div class="image-container">
+                <img src="Windsurf IDE de IA de próxima geração para fluxo contínuo e automação.png" 
+                    alt="Mapa Mental da Windsurf IDE de IA mostrando fluxo de trabalho e automação" 
+                    class="mindmap-image">
+                <div class="image-caption">Clique na imagem para ampliar</div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>MED Windsurf</h3>
+                <p>Material Educacional Digital: Análise completa da IDE de IA de nova geração e do projeto ABNT Assistant.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="#visao-geral"><i class="fas fa-chevron-right"></i> Sobre o Windsurf</a></li>
+                    <li><a href="#vantagens"><i class="fas fa-chevron-right"></i> Vantagens</a></li>
+                    <li><a href="#desvantagens"><i class="fas fa-chevron-right"></i> Desvantagens</a></li>
+                    <li><a href="#abnt-assistant"><i class="fas fa-chevron-right"></i> ABNT Assistant</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Informações e Contato</h3>
+                <ul class="footer-links">
+                    <li><a href="guia_med.html" target="_blank"><i class="fas fa-book"></i> Guia do MED</a></li>
+                    <li><a href="https://docs.windsurf.com/windsurf/getting-started" target="_blank"><i class="fas fa-file-alt"></i> Documentação do Windsurf</a></li>
+                    <li><a href="mailto:urbaantuneslaura@gmail.com"><i class="fas fa-envelope"></i> urbaantuneslaura@gmail.com</a></li>
+                    <li><a href="https://github.com/LauraUrba" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 MED - Windsurf AI IDE. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>         
+
+    <!-- Lightbox Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+        
+        // Lightbox functionality
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+        const captionText = document.getElementById('caption');
+        const closeBtn = document.getElementsByClassName('close')[0];
+
+        // Quando a imagem for clicada, abre o modal
+        document.querySelector('.mindmap-image').onclick = function() {
+            modal.style.display = 'block';
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Quando clicar no X, fecha o modal
+        closeBtn.onclick = function() {
+            modal.style.display = 'none';
+        }
+
+        // Quando clicar fora da imagem, fecha o modal
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        // Fechar com a tecla ESC
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                modal.style.display = 'none';
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Copy code functionality
+        document.querySelectorAll('.code-copy').forEach(button => {
+            button.addEventListener('click', () => {
+                const codeBlock = button.closest('.example-code').querySelector('pre');
+                const code = codeBlock.textContent;
+                
+                navigator.clipboard.writeText(code).then(() => {
+                    const originalText = button.innerHTML;
+                    button.innerHTML = '<i class="fas fa-check"></i> Copiado!';
+                    
+                    setTimeout(() => {
+                        button.innerHTML = originalText;
+                    }, 2000);
+                }).catch(err => {
+                    console.error('Erro ao copiar o código:', err);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
