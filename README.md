@@ -74,3 +74,8 @@ Este Material Educacional Digital tem como objetivo apresentar ferramentas moder
 
 ## 🌐 Link do Site no GitHub Pages  
 [MED-Windsurf](https://lauraurba.github.io/MED-Windsurf/)
+
+## Demonstração em vídeo
+
+📽️ [Clique aqui para baixar e assistir ao vídeo TCC.webm](./TCC.webm)
+
